@@ -33,4 +33,3 @@ for table in range(1, 13):  #tolv tabeller
         print(f"{table} * {y} = {str(table * y)}")
 
         
-    
