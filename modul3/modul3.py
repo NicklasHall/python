@@ -19,7 +19,7 @@ while True:
 
 
 y2=1
-x2=int(input("vilket tal vill du ha"))
+x2=int(input("vilket tal vill du ha så många gånger"))
 while True:
     print(x2)
     y2 +=1 
