@@ -1,7 +1,7 @@
 import os 
 os.system("cls")
 
-"""
+
 names = ["Axel", "Albert", "Isak", "Joakim", "Ninja", "Leonard"]
 names[0] = "Nicklas"
 
@@ -22,9 +22,9 @@ names.pop(4)
 
 for i in names:
     print(i)
-"""
 
-"""
+
+
 while True:
     names2 = []
 
@@ -46,7 +46,7 @@ while True:
         else:
             names2.append (name)
 
-       """     
+         
 
 carlib = { 
    "Brand": "volvo",
