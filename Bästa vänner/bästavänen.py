@@ -1,8 +1,11 @@
-# BÄSTAVAN.py: En bästa vän lista
+"""
+bästavänen.PY: Bästa vänner
 
 __author__  = "Nicklas Hall"
 __version__ = "1.0.0"
-__email__   = "Nicklas.hall@elev.ga.ntig.se"
+__email__   = nicklas.hall@elev.ga.ntig.se
+
+"""
 
 from msvcrt import getwch
 import os
@@ -26,15 +29,20 @@ def add_name(new):
     Names.append(new)
 
 def remove_name(remove):
-    Names.pop(remove - 1)
+    if 1 <= remove <= len(Names):
+        Names.pop(remove - 1)
+    else:
+        print("Ogiltigt nummer. Försök igen.")
 
 def edit_name(index, name):
-    Names[index - 1] = name
+    if 1 <= index <= len(Names):
+        Names[index - 1] = name
+    else:
+        print("Ogiltigt nummer. Försök igen.")
 
 while True:
     print_menu()
     choice = getwch()
-
 
     if choice == "1":
         print_names()
@@ -56,4 +64,4 @@ while True:
     elif choice == "5":
         break
     else:
-        print("Ogiltigt val. Försök igen.")
+        print("fel val. Försök igen.")
