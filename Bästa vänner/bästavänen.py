@@ -45,17 +45,21 @@ while True:
     choice = getwch()
 
     if choice == "1":
+        os.system("cls")  
         print_names()
     elif choice == "2":
+        os.system("cls")  
         new = input("Nytt namn: ")
         add_name(new)
         print_names()
     elif choice == "3":
+        os.system("cls")  
         print_names()
         remove = int(input("Vilket nummer vill du ta bort? "))
         remove_name(remove)
         print_names()
     elif choice == "4":
+        os.system("cls")  
         print_names()
         edit = int(input("Vilket nummer vill du ändra? "))
         name = input("Skriv det nya namnet: ")
